@@ -1,43 +1,76 @@
+.body {
+  padding: 0;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 100%;
 }
 
 .loginform {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 330px;
+  width: 100%;
 }
 
-.loginform1 {
-  display: block;
-  width: 300px;
-  height: 46px;
-  border-top-left-radius: 6px;
-  border-top-left-radius: 6px;
+.loginform h1 {
+  font-weight: 500;
+  font-size: 27px;
 }
 
-.loginform2 {
-  display: block;
-  width: 300px;
-  height: 46px;
-  border-top-left-radius: 6px;
-  border-top-left-radius: 6px;
-  margin-bottom: 20px;
+.loginform img {
+  width: 72px;
+  height: 72px;
 }
 
-.button {
-  width: 300px;
-  height: 38px;
-  background: #007bff;
-  border-radius: 6px;
-  margin-bottom: 20px;
-  font-size: 28px;
+.form {
+  max-width: 330px;
+}
+
+.form input[type="email"],
+.form input[type="password"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  color: #495057;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.form .checkbox {
+  padding: 10px;
+}
+
+.form .checkbox label {
+  display: flex;
+  width: 100%;
+  font-size: 14px;
+  justify-content: center;
+}
+
+.form button {
+  margin-top: 1rem;
+  background-color: #007bff;
+  border: none;
   color: white;
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  cursor: pointer;
 }
 
-.rememberme {
-  margin-bottom: 20px;
+.loginform .copyright {
+  margin-top: 2rem;
+  color: #6c757d;
 }
